@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <!--                  formulário                 -->
+
+    <form method="post"> 
+        <div>
+            <h1> Cadastro do Desenvolvedor </h1>
+            <p> Registre suas informações </p>
+
+        </div>
+
+
+        <fieldset>
+            <legend> Nome </legend>
+            <label for="pnome"> Primeiro nome </label><br>
+            <input type="text" id="pnome" name="pnome"><br>
+            <label for="unome"> Último nome </label><br>
+            <input type="text" id="unome" name="unome"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend> Raça </legend>
+            <p> Escolha sua raça </p>
+            <input type="radio" id="humana" name="raca" value="humana">
+            <label for="humana"> Humana </label>
+            <input type="radio" id="I.A" name="raca" value="I.A">
+            <label for="I.A"> I.A </label>
+            <input type="radio" id="Extraterrestreste" name="raca" value="Extraterrestreste">
+            <label for="Extraterrestreste"> Extraterrestreste </label>
+            <input type="radio" id="outro" name="raca" value="outro">
+            <label for="Outra"> Outra </label>
+        </fieldset>
+
+        <fieldset>
+            <legend> Linguagens </legend>
+            <P> Linguagens a trabalhar: </P>
+            <input type="checkbox" id="Ling1" name="Ling1" value="hmtl">
+            <label for="Ling1"> html </label>
+            <input type="checkbox" id="Ling2" name="Ling2" value="CSS">
+            <label for="Ling2"> CSS </label>
+            <input type="checkbox" id="Ling3" name="Ling3" value="JavaScript">
+            <label for="Ling3"> JavaScript </label><br>
+        </fieldset>
+
+        <fieldset> 
+            <legend> informações complementares </legend>
+            <label for="email"> E-mail </label>
+            <input type="email" name="email" id="email"><br><br>
+            <label for="escolaridade"> Escolaridade </label>
+            <select  id="escolaridade">
+                <option selected disabled value=""> Selecione </option>
+                <option> Ensino Fundamental </option>
+                <option> Ensino Médio </option>
+                <option> Ensino Técnico </option>
+                <option> Ensino Superior    </option>
+                <option> Chatgpt   </option>
+            </select> <br> <br>
+            <label for="endereço"> Endereço: </label>
+            <textarea id="endereço" name="endereço"> </textarea><br><br>
+            <label for="dnascimento"> Data de Nascimento</label>
+            <input type="date" name="dnascimento" id="dnascimento"> <br> <br>
+            <label for="ntelefone"> Número de telefone </label>
+            <input type="number" name="ntelefone" id="ntelefone">
+
+        </fieldset>
+
+        <fieldset>
+            <legend> Usuário </legend>
+         
+            <label for="usuario"> Nome do Usuário </label>
+            <input type="text" id="usuario"> <br>
+            <Label for="senha"> senha (8 caracteres no mínimo) </Label>
+            <input type="password" minlength="8" required id="senha" name="senha">
+        </fieldset>
+        <br><input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>
